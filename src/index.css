@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap');
+
+body {
+    margin: 0 auto;
+    font-family: 'Red Hat Display', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 1280px;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    background: #061628;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.group:before,
+.group:after {
+    content: " ";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, p {
+    color: white;
+}
+
+h2 {
+    font-family: 'Rubik Glitch', system-ui;
+    font-weight: lighter;
+    text-transform: capitalize;
+    font-size: 45px;
+}
+
+.custom-button {
+    border-radius: 10rem;
+    padding: 1.5rem 5.5rem 1.5rem 5.5rem;
+    margin: 1rem;
+    font-family: 'Red Hat Display', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    text-decoration: none;
+}
+
+.filled-button {
+    background: #81bbfe;
+    color: #061628;
+    &:hover {
+        transition: background-color 0.3s;
+        background: #3b8ffc;
+    }
+}
+
+
+
+.outlined-button {
+    background: none;
+    color: white;
+    border: 1px solid white;
+    &:hover {
+        transition: background-color 0.3s;
+        background: white;
+        color: #061628;
+    }
+}
+
+.button-fill-effect {
+    overflow: hidden;
+    position: relative;
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+
+    &::after {
+        background-color: #81bbfe;
+        border-radius: 25rem;
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(-100%, 0) rotate(10deg);
+        transform-origin: top left;
+        transition: 0.2s transform ease-out;
+        will-change: transform;
+        z-index: -1;
+    }
+
+    &:hover::after {
+        transform: translate(0, 0);
+    }
+
+    &:hover {
+        border: 2px solid #061628;
+        color: #061628;
+        transform: scale(1.05);
+        will-change: transform;
+    }
+}

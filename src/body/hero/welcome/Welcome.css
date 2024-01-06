@@ -1,0 +1,59 @@
+.welcome-item {
+    text-transform: uppercase;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+}
+
+.welcome-item:nth-child(1) {
+    grid-column: 2;
+    justify-self: start;
+    grid-row: 2;
+    margin-right: -3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: .5rem;
+}
+
+.welcome-item:nth-child(2) {
+    grid-column: 1;
+    grid-row: span 3;
+}
+
+.welcome-item:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.welcome-item:nth-child(4) {
+    grid-column: 2;
+    justify-self: right;
+    grid-row: 4;
+    margin-right: -3rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.welcome-letter-a {
+    margin-top: -2rem;
+    font-weight: normal;
+    font-size: 300px;
+    color: #81bbfe;
+    font-family: "Rubik Glitch", system-ui;
+}
+
+.welcome-rest-of-the-name {
+    font-size: 60px;
+    word-spacing: 2.5rem;
+    font-weight: normal;
+    font-family: 'Rubik Glitch', system-ui;
+}
+
+.welcome-hello, .welcome-welcome-to-website {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.welcome-welcome-to-website {
+    word-spacing: 1rem;
+    margin-top: 2rem;
+}

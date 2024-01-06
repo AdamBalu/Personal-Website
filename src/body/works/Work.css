@@ -1,0 +1,103 @@
+.align-left {
+    display: grid;
+    grid-template-rows: 250px 150px;
+    text-align: left;
+
+    .work-component-image {
+        grid-row: span 3;
+        grid-column: 2;
+        width: 400px;
+        margin-left: 150px;
+        transition: transform .6s ease-in-out;
+        &:hover {
+            transform: rotate(-15deg);
+        }
+    }
+
+    p {
+        max-width: 40rem;
+        grid-row: 2;
+        grid-column: 1;
+        justify-self: flex-start;
+    }
+
+    h2 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    a {
+        grid-row: 3;
+        word-spacing: .5rem;
+        width: 350px;
+        text-align: center;
+    }
+}
+
+.align-right {
+    display: grid;
+    grid-template-rows: 250px 150px;
+    text-align: right;
+
+    .wedding-ring-images {
+        position: relative;
+        grid-row: span 3;
+        grid-column: 1;
+        width: 400px;
+        margin-right: 150px;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: transform 1s ease-in-out;
+        }
+
+        img + img {
+            left: 150px;
+            transform: rotate(20deg);
+        }
+
+        &:hover img:first-child {
+            transform: rotate(-10deg);
+        }
+
+        &:hover img + img {
+            transform: rotate(35deg);
+        }
+    }
+
+    p {
+        max-width: 40rem;
+        grid-row: 2;
+        grid-column: 2;
+        justify-self: flex-end;
+    }
+
+    h2 {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    a {
+        grid-row: 3;
+        grid-column: 2;
+        justify-self: flex-end;
+        word-spacing: .5rem;
+        width: 350px;
+        text-align: center;
+    }
+}
+
+.button-icon {
+    display: none;
+}
+
+#detox-rank-download:hover {
+    .button-icon {
+        display: inline-block;
+    }
+}
+
+.work-component {
+    margin-bottom: 15rem;
+}
