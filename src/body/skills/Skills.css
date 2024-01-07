@@ -1,0 +1,49 @@
+.big {
+    color: white;
+    font-size: 50px;
+}
+
+.skill-icon {
+    color: #81bbfe;
+    font-size: 5rem;
+    margin-right: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    width: 80px;
+    height: 80px;
+    &:hover {
+        color: #5ea5ff;
+    }
+}
+
+
+.skill-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.3rem;
+}
+
+.skills-heading {
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+}
+
+.skill-star {
+    margin: .5rem;
+    &:hover {
+        color: #ffaf13;
+    }
+}
+
+.skill-list {
+    width: 27.625rem;
+    margin: 0 auto 20rem;
+}
+
+.skill-outlined-star {
+    margin: .5rem;
+    color: rgb(10, 34, 59);
+    &:hover {
+        color: white;
+    }
+}

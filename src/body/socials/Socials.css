@@ -1,0 +1,36 @@
+.socials-heading {
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+}
+
+.social-button {
+    padding: 5rem 5rem;
+    margin: 1rem;
+    outline: 1px solid #81bbfe;
+    border-radius: 2rem;
+    transition: background-color .5s ease-in-out;
+
+    &:hover {
+        background-color: #81bbfe;
+
+        .social-icon {
+            transition: color .5s ease-in-out;
+            color: #061628;
+        }
+    }
+}
+
+.social-icon {
+    font-size: 50px;
+    color: #81bbfe;
+}
+
+.socials-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socials-wrapper {
+    margin-bottom: 10rem;
+}

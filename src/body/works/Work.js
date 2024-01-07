@@ -25,7 +25,7 @@ function Work() {
                            button={
                                <a href="https://play.google.com/store/apps/details?id=com.blaubalu.detoxrank"
                                   className="custom-button outlined-button button-fill-effect" id="detox-rank-download">
-                                   <FontAwesomeIcon icon={faAndroid}/> Download <FontAwesomeIcon
+                                   <FontAwesomeIcon icon={faAndroid}/> Get App <FontAwesomeIcon
                                    icon="fa-solid fa-arrow-right" className="button-icon"/>
                                </a>
                            }/>
